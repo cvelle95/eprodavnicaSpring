@@ -25,7 +25,7 @@ public class ProizvodModel {
     private float cena;
 
     @Column(name = "kategorija_proizvoda_id")
-    private int kategorijaProizvodaId;
+    private int kategorija_proizvoda_id;
 
     @Column(name = "proizvodjac")
     private String proizvodjac;

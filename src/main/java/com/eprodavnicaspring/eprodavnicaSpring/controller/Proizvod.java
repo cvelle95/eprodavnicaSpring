@@ -22,4 +22,8 @@ public class Proizvod {
     @GetMapping("findall")
     @CrossOrigin(origins = "*") //Vraca sve proizvode iz baze
     public List<ProizvodModel> findAll(){ return proizvodService.findAll(); }
+
+    @GetMapping("filtersearch")
+    @CrossOrigin(origins = "*")// pretrazivanje proizvoda po kategoriji i ceni
+    public List<ProizvodModel> filterSearch(int kategorija_proizvoda_id,float cenaMin,float cenaMax){return proizvodService.filterSearch(kategorija_proizvoda_id, cenaMin, cenaMax);}
 }

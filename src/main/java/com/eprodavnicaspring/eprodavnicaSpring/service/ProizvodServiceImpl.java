@@ -13,4 +13,9 @@ public class ProizvodServiceImpl implements ProizvodService{
 
     @Override
     public List<ProizvodModel> findAll(){ return proizvodRepository.findAll(); }
+
+    @Override
+    public List<ProizvodModel> filterSearch(int kategorija_proizvoda_id,float cenaMin,float cenaMax){//Pobrini se na frontu da poalje default value ako nisu izabrane npr cena od do
+        return proizvodRepository.filterSearch(kategorija_proizvoda_id, cenaMin, cenaMax);
+    }
 }

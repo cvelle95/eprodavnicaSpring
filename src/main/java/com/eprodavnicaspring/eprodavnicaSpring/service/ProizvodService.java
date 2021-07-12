@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface ProizvodService {
     public List<ProizvodModel> findAll();
+    public List<ProizvodModel> filterSearch(int kategorija_proizvoda_id,float cenaMin,float cenaMax);
 }
